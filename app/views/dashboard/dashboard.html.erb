@@ -1,0 +1,314 @@
+<%= render partial: "sidebar_start" %>
+      <div class="row">
+        <div class="col">
+          <div class="card card-box">
+            <div class="card-head">
+              <header>Professors List</header>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <ul class="professors-list">
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user1.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Rajesh</a> -(M.Com, PHD)
+                      </div>
+                      <div>
+                        <span class="clsAvailable">Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user2.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Sarah Smith</a> -(M.A., B.Ed)
+                      </div>
+                      <div>
+                        <span class="clsAvailable">Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user3.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">John Deo</a> - (B.C.A., M.C.A.)
+                      </div>
+                      <div>
+                        <span class="clsNotAvailable">Not Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user4.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Jay Soni</a> - (B.E., M.E.)
+                      </div>
+                      <div>
+                        <span class="clsOnLeave">On Leave</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user5.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Jacob Ryan</a> - (M.Phil)
+                      </div>
+                      <div>
+                        <span class="clsNotAvailable">Not Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user6.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Megha Trivedi</a> - (M.S.W, PHD)
+                      </div>
+                      <div>
+                        <span class="clsAvailable">Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user2.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Sarah Smith</a> -(B.S.C, M.S.C.)
+                      </div>
+                      <div>
+                        <span class="clsAvailable">Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user3.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">John Deo</a> - (B.E., M.E.)
+                      </div>
+                      <div>
+                        <span class="clsNotAvailable">Not Available</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prog-avatar">
+                      <img src="../assets/user4.jpg" alt="" width="40" height="40">
+                    </div>
+                    <div class="details">
+                      <div class="title">
+                        <a href="#">Jay Soni</a> - (B.C.A., M.C.A.)
+                      </div>
+                      <div>
+                        <span class="clsOnLeave">On Leave</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="full-width text-center p-t-10">
+                  <button type="button" class="text-purple-600 hover:text-white hover:bg-purple-700 hover:bg-purple-800 outline-none border border-purple-300 font-medium rounded-full text-xs px-4 py-2">View All</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card-box">
+            <div class="card-head">
+              <header>Salary Status</header>
+            </div>
+            <div class="card-body ">
+              <ul id="tabs" class="flex justify-start">
+                <a id="default-tab" href="#first" class="is-active">PROFESSORS</a>
+                <a href="#second">LIBRARIAN</a>
+                <a href="#third">OTHER</a>
+              </ul>
+              <div id="tab-contents">
+                <div id="first" class="pt-5">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Ammount</th>
+                        <th>Transaction ID</th>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user6.jpg" alt="">
+                        </td>
+                        <td>John Deo</td>
+                        <td>05-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Unpaid</button>
+                        </td>
+                        <td>1200$</td>
+                        <td>#7234486</td>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user4.jpg" alt="">
+                        </td>
+                        <td>Eugine Turner</td>
+                        <td>04-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Paid</button>
+                        </td>
+                        <td>1400$</td>
+                        <td>#7234417</td>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user2.jpg" alt="">
+                        </td>
+                        <td>Jacqueline Howell</td>
+                        <td>03-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 dark:focus:ring-yellow-900">Pending</button>
+                        </td>
+                        <td>1100$</td>
+                        <td>#7234454</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="text-center">
+                    <button class="load-more-btn bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white hover:border-transparent rounded">Load More</button>
+                  </div>
+                </div>
+                <div id="second" class="hidden pt-5">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Ammount</th>
+                        <th>Transaction ID</th>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user1.jpg" alt="">
+                        </td>
+                        <td>Eugine Turner</td>
+                        <td>04-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Paid</button>
+                        </td>
+                        <td>700$</td>
+                        <td>#7234417</td>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user4.jpg" alt="">
+                        </td>
+                        <td>Jacqueline Howell</td>
+                        <td>03-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 dark:focus:ring-yellow-900">Pending</button>
+                        </td>
+                        <td>500$</td>
+                        <td>#7234454</td>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user5.jpg" alt="">
+                        </td>
+                        <td>Jayesh Parmar</td>
+                        <td>03-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Unpaid</button>
+                        </td>
+                        <td>400$</td>
+                        <td>#72544</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="text-center">
+                    <button class="load-more-btn bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white hover:border-transparent rounded">Load More</button>
+                  </div>
+                </div>
+                <div id="third" class="hidden pt-5">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Ammount</th>
+                        <th>Transaction ID</th>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user8.jpg" alt="">
+                        </td>
+                        <td>Jane Elliott</td>
+                        <td>06-01-2017</td>
+                        <td>
+                          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Paid</button>
+                        </td>
+                        <td>300$</td>
+                        <td>#7234421</td>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user7.jpg" alt="">
+                        </td>
+                        <td>Jacqueline Howell</td>
+                        <td>03-01-2017</td>
+                        <td>
+                          <button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 dark:focus:ring-yellow-900">Pending</button>
+                        </td>
+                        <td>450$</td>
+                        <td>#723344</td>
+                      </tr>
+                      <tr>
+                        <td class="patient-img">
+                          <img src="../assets/user9.jpg" alt="">
+                        </td>
+                        <td>Jacqueline Howell</td>
+                        <td>03-01-2017</td>
+                        <td>
+                          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Paid</button>
+                        </td>
+                        <td>550$</td>
+                        <td>#7235454</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="text-center">
+                    <button class="load-more-btn bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white hover:border-transparent rounded">Load More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<%= render partial: "sidebar_end" %>

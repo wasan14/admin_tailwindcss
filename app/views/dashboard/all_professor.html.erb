@@ -1,0 +1,334 @@
+<%= render partial: "sidebar_start" %>
+  <div class="all-professors">
+    <div class="page-header flex justify-between">
+      <div class="page-title">Professors List</div>
+      <ol class="breadcrumb flex">
+        <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="./dashboard">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+        </li>
+        <li><a class="parent-item" href="">Professors</a>&nbsp;<i class="fa fa-angle-right"></i>
+        </li>
+        <li class="active">Professors List</li>
+      </ol>
+    </div>
+    <div class="row page-body card-box mt-5">
+      <div class="col">
+        <div class="card-head">
+          <header>All Professors</header>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <a href="./add_professor" class="inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 m-2 mx-auto dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add New <i class="fa fa-plus"></i></a>
+          </div>
+          <div>
+            <div class="flex justify-between search-filter">
+              <div class="show-entries-dropdown">
+                <label>Show
+                  <select>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  entries
+                </label>
+              </div>
+              <div class="search-professors">
+                <label>Search:
+                  <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example4">
+                </label>
+              </div>
+            </div>
+            <div class="professors-list-table mt-2">
+              <table class="text-left min-w-full text-sm font-light">
+                <thead class="font-medium dark:border-neutral-500">
+                  <tr>
+                    <th scope="col" class="px-6 py-3"></th>
+                    <th scope="col" class="px-6 py-3"> Name </th>
+                    <th scope="col" class="px-6 py-3"> Department </th>
+                    <th scope="col" class="px-6 py-3"> Gender </th>
+                    <th scope="col" class="px-6 py-3"> Degree </th>
+                    <th scope="col" class="px-6 py-3"> Mobile </th>
+                    <th scope="col" class="px-6 py-3"> Email </th>
+                    <th scope="col" class="px-6 py-3"> Joining Date</th>
+                    <th scope="col" class="px-6 py-3"> Action </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user1.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Rajesh</td>
+                    <td class="px-6 py-4">Computer</td>
+                    <td class="px-6 py-4">Male</td>
+                    <td class="px-6 py-4">M.Com, B.Ed</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:4444565756">4444565756</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">rajesh@gmail.comsdgfsdfg</a>
+                    </td>
+                    <td class="px-6 py-4">22 Feb 2000</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user10.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Pooja Patel</td>
+                    <td class="px-6 py-4">Mechanical</td>
+                    <td class="px-6 py-4">Female</td>
+                    <td class="px-6 py-4">M.E.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:444786876">444786876</a></td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">pooja@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">27 Aug 2005</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user2.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Sarah Smith</td>
+                    <td class="px-6 py-4">Science</td>
+                    <td class="px-6 py-4">Female</td>
+                    <td class="px-6 py-4">B.Sc., M.Sc.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:44455546456">44455546456</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">sarah@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">05 Jun 2011</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user3.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">John Deo</td>
+                    <td class="px-6 py-4">Music</td>
+                    <td class="px-6 py-4">Male</td>
+                    <td class="px-6 py-4">B.A.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:444543564">444543564</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">john@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">15 Feb 2012</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user4.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Jay Soni</td>
+                    <td class="px-6 py-4">Mathematics</td>
+                    <td class="px-6 py-4">10</td>
+                    <td class="px-6 py-4">B.B.A., P.H.D.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:444543564">444543564</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">kenh@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">12 Nov 2012</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user5.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Jacob Ryan</td>
+                    <td class="px-6 py-4">Computer</td>
+                    <td class="px-6 py-4">Male</td>
+                    <td class="px-6 py-4">B.E., M.E.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:444543564">444543564</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">johnson@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">03 Dec 2001</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user6.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Megha Trivedi</td>
+                    <td class="px-6 py-4">Mathematics</td>
+                    <td class="px-6 py-4">Female</td>
+                    <td class="px-6 py-4">M.COM, M.Ed.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:444543564">444543564</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">megha@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">17 Mar 2013</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user1.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Rajesh</td>
+                    <td class="px-6 py-4">Computer</td>
+                    <td class="px-6 py-4">Male</td>
+                    <td class="px-6 py-4">M.Com, B.Ed</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:4444565756">4444565756</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">rajesh@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">22 Feb 2000</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user10.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Pooja Patel</td>
+                    <td class="px-6 py-4">Mechanical</td>
+                    <td class="px-6 py-4">Female</td>
+                    <td class="px-6 py-4">M.E.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:444786876">444786876</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">pooja@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">27 Aug 2005</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="odd:bg-gray-100 even:bg-white-50 border-b">
+                    <td class="px-6 py-4 patient-img">
+                      <img src="../assets/user2.jpg" alt="">
+                    </td>
+                    <td class="px-6 py-4">Sarah Smith</td>
+                    <td class="px-6 py-4">Science</td>
+                    <td class="px-6 py-4">Female</td>
+                    <td class="px-6 py-4">B.Sc., M.Sc.</td>
+                    <td class="px-6 py-4">
+                      <a href="tel:44455546456">44455546456</a>
+                    </td>
+                    <td class="px-6 py-4">
+                      <a href="mailto:shuxer@gmail.com">sarah@gmail.com</a>
+                    </td>
+                    <td class="px-6 py-4">05 Jun 2011</td>
+                    <td class="px-6 py-4">
+                      <a href="edit_professor" class="tblEditBtn">
+                        <i class="fa fa-pencil"></i>
+                      </a>
+                      <a class="tblDelBtn">
+                        <i class="fa fa-trash-o"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex justify-between pt-3">
+              <p>Showing 1 to 10 of 14 entries</p>
+              <div class="col">
+                <nav aria-label="Page navigation example">
+                  <ul class="inline-flex -space-x-px text-sm">
+                    <li>
+                      <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">Previous</a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                    </li>
+                    <li>
+                      <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">4</a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">5</a>
+                    </li>
+                    <li>
+                      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<%= render partial: "sidebar_end" %>

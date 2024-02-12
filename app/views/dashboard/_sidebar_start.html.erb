@@ -1,0 +1,138 @@
+<div class="flex h-screen" x-data="{ isSidebarExpanded: true }">
+  <aside class="flex flex-col transition-all duration-300 ease-in-out" :class="isSidebarExpanded ? 'w-64 expanded' : 'w-20 shrinked'">
+    <a href="#" class="flex items-center px-4 logo">
+      <i class="fa fa-graduation-cap"></i>
+      <span class="ml-2 text-xl font-medium duration-300 ease-in-out" :class="isSidebarExpanded ? 'opacity-100' : 'hidden opacity-0'">Dashboard</span>
+    </a>
+    <ul class="space-y-2 font-medium">
+      <li class="sidebar-user-panel">
+        <div class="sidebar-user">
+          <div class="sidebar-user-picture">
+            <img alt="image" src="./assets/dp.jpg">
+          </div>
+          <div class="sidebar-user-details">
+            <div class="user-name">Sneha Patel</div>
+            <div class="user-role">Administrator</div>
+          </div>
+        </div>
+      </li>
+      <li class="sidebar-menu active overflow-hidden">
+        <a href="./" class="flex items-center px-3 transition-colors duration-150 ease-in-out">
+          <i class="fa fa-dashboard"></i>
+          <span class="ml-2" :class="isSidebarExpanded ? 'opacity-100' : 'opacity-0'">Dashboard</span>
+        </a>
+      </li>
+      <li x-data="{ open: false }" class="sidebar-menu overflow-hidden" :class="open ? 'multi-open' : 'multi-close'">
+        <a x-on:click="open = true" href="javascript:void(0)" class="flex items-center px-3 transition-colors duration-150 ease-in-out">
+          <i class="fa fa-users"></i>
+          <span class="ml-2 flex-1" :class="isSidebarExpanded ? 'opacity-100' : 'opacity-0'">Professors</span>
+          <i class="fa fa-chevron-right" :class="open ? 'open' : 'close'"></i>
+        </a>
+        <ul x-show="open" x-on:click.away="open = false" class="bg-white text-gray-700 rounded shadow-lg py-2">
+            <li>
+              <a href="./all_professor" class="flex items-center">
+                <span class="ml-1">All Professors</span>
+              </a>
+            </li>
+            <li>
+              <a href="./add_professor" class="flex items-center">
+                <span class="ml-1">Add Professor</span>
+              </a>
+            </li>
+            <li>
+              <a href="./edit_professor" class="flex items-center">
+                <span class="ml-1">Edit Professor</span>
+              </a>
+            </li>
+            <li>
+              <a href="./about_professor" class="flex items-center">
+                <span class="ml-1">About Professor</span>
+              </a>
+            </li>
+          </ul>
+      </li>
+    </ul>
+  </aside>
+  <div class="flex-1 z-index-1 side-main-content">
+    <header class="flex items-center px-6 bg-white justify-between sticky-header">
+      <i class="fa fa-bars sidebar-switch cursor-pointer" @click="isSidebarExpanded = !isSidebarExpanded"></i>
+      <ul class="profile-menu flex items-center">
+        <li x-data="{ open: false }" class="relative language-dropdown">
+          <button x-on:click="open = true" class="flex items-center font-semibold py-2 px-4" type="button">
+            <img src="./assets/gb.png" />
+            <span class="ml-1"> English</span>
+          </button>
+          <ul x-show="open" x-on:click.away="open = false" class="bg-white text-gray-700 rounded shadow-lg absolute py-2 mt-1">
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="./assets/de.png" />
+                <span class="ml-1"> Deutsch</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="./assets/ua.png" />
+                <span class="ml-1"> Ukrainian</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="./assets/gb.png" />
+                <span class="ml-1"> English</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="./assets/es.png" />
+                <span class="ml-1"> España</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <img src="./assets/ru.png" />
+                <span class="ml-1"> Russian</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li x-data="{ open: false }" class="relative profile-dropdown">
+          <button x-on:click="open = true" class="flex items-center font-semibold py-2 px-4" type="button">
+            <img class="img-circle" src="./assets/dp.jpg" />
+            <span class="ml-1"> Sneha</span>
+          </button>
+          <ul x-show="open" x-on:click.away="open = false" class="bg-white text-gray-700 rounded shadow-lg absolute py-2 mt-1">
+            <li>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-user"></i>
+                <span> Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-gear"></i>
+                <span> Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-info"></i>
+                <span> Help</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-lock"></i>
+                <span> Lock</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center">
+                <i class="fa fa-arrow-circle-right"></i>
+                <span> Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <main class="p-6">
